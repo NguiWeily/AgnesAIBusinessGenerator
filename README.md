@@ -18,6 +18,12 @@ Components & responsibilities:
 
 business_plan.py — core plan-generator library (business logic, heuristics, data structures, JSON/pretty output).
 
+<img width="536" height="853" alt="image" src="https://github.com/user-attachments/assets/f66135c4-a068-4483-a04c-4e66364660f1" />
+
+<img width="720" height="963" alt="image" src="https://github.com/user-attachments/assets/edb818cf-6989-4f62-b2c1-d4423b04aad4" />
+
+<img width="708" height="954" alt="image" src="https://github.com/user-attachments/assets/3d7a5f23-1743-4f12-859c-64e0feda24d6" />
+
 Home business plan generator
 ---------------------------
 
