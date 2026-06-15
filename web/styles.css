@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.hero {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%);
+  color: white;
+}
+
+.small-hero {
+  padding: 3rem 1.5rem;
+}
+
+.hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background: white;
+  color: #1f2937;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 18px 40px rgba(15,23,42,.12);
+}
+
+.container {
+  max-width: 1100px;
+  margin: -2.5rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.form-card,
+.result-card,
+.sample-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(15,23,42,.08);
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  padding: 1rem;
+  font-size: 1rem;
+  min-height: 140px;
+  resize: vertical;
+}
+
+button[type="submit"],
+#copy-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.95rem 1.5rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover,
+#copy-button:hover,
+.button:hover {
+  opacity: 0.95;
+}
+
+.result-card.hidden {
+  display: none;
+}
+
+.result-card pre {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.footer {
+  text-align: center;
+  color: #6b7280;
+  padding: 1.5rem;
+}
+
+.samples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.sample-card h3 {
+  margin-top: 0;
+}
+
+.sample-idea {
+  font-style: italic;
+  margin: 0.5rem 0 1rem;
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.sample-card details {
+  margin-top: 1rem;
+}
+
+.plan-section {
+  margin-top: 1rem;
+}
+
+.plan-section h4 {
+  margin-bottom: 0.4rem;
+}

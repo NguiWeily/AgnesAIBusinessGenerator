@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 Home Business Plan Samples</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero small-hero">
+    <div class="hero-content">
+      <h1>100 Home Business Plan Samples</h1>
+      <p>Browse sample ideas with budgets, cashflow, licenses, skills, timelines, milestones, and risk guidance.</p>
+      <a class="button" href="index.html">Generate Your Own Plan</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="samples" class="samples-grid"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Sample plan page generated dynamically for inspiration.</p>
+  </footer>
+  <script src="app.js"></script>
+  <script>
+    const sampleIdeas = [
+      'A home tutoring business for middle school math students',
+      'A backyard gourmet dog treat bakery',
+      'A virtual fitness coaching service for busy parents',
+      'A handmade candle shop sold online',
+      'A remote bookkeeping service for freelancers',
+      'A custom event invitation design studio',
+      'A local houseplant care and delivery business',
+      'A language coaching service for Spanish learners',
+      'A nutrition planning service for health-conscious families',
+      'A home-based personal styling and wardrobe consulting service',
+      'A mobile auto detailing service with at-home pickup',
+      'A digital course teaching watercolor painting',
+      'A meal prep subscription for working professionals',
+      'A remote social media management agency',
+      'A pet photography service with home studio sessions',
+      'A home-based sewing and repair service for clothing',
+      'A children’s birthday party planning concierge',
+      'A small-batch soap and skincare product business',
+      'A home-based resume and cover letter writing service',
+      'A travel planning and itinerary creation service',
+      'A virtual assistant service for e-commerce sellers',
+      'A handmade jewelry business sold through marketplaces',
+      'A senior companion and errand service',
+      'A local eco-friendly cleaning product business',
+      'A work-from-home copywriting service for startups',
+      'A subscription box for hobby craft supplies',
+      'A local grocery shopping and delivery service',
+      'A voiceover and audio editing service',
+      'A pet sitting and dog walking business',
+      'A home-based portrait illustration service',
+      'A local tutoring service for language learners',
+      'A handmade furniture refinishing business',
+      'A home-based tech support and setup service',
+      'A remote business coaching and accountability service',
+      'A meal planning service for busy families',
+      'A home-based digital marketing training program',
+      'A custom gift box and subscription service',
+      'A personal budgeting and finance coaching service',
+      'A small online store selling planner accessories',
+      'A local yard cleanup and garden maintenance service',
+      'A remote resume review and interview coaching business',
+      'A home-based meal planning and grocery list service',
+      'A custom stationery and greeting card business',
+      'A local mattress and bedding cleaning service',
+      'A personal productivity coaching service',
+      'A remote content editorial service for bloggers',
+      'A nutrition coaching service for plant-based diets',
+      'A home-based custom tee shirt and print business',
+      'A local senior meal delivery service',
+      'A remote course creation support service',
+      'A home office setup and productivity consulting business',
+      'A small online gift business for new parents',
+      'A local bike repair and tune-up service',
+      'A remote podcast planning and editing service',
+      'A home-based eco cleaning consultation service',
+      'A custom photo album design and printing business',
+      'A personal travel guide planning service for families',
+      'A remote email marketing service for coaches',
+      'A home-based floral arrangement service',
+      'A local home electronics setup service',
+      'A remote wellness workshop and coaching business',
+      'A custom knitwear business sold online',
+      'A local in-home senior companion service',
+      'A remote website copywriting service',
+      'A meal prep service for athletes',
+      'A home-based craft workshop studio',
+      'A local pet toy and accessory business',
+      'A remote Pinterest marketing service',
+      'A home-based watercolor greeting card business',
+      'A local baby gear rental service',
+      'A remote design critique and branding service',
+      'A personal training service for remote clients',
+      'A home-based sustainable gift wrap business',
+      'A local dog treat delivery service',
+      'A remote finance coaching for young professionals',
+      'A home-based candle-making subscription service',
+      'A local tutoring service for early literacy',
+      'A remote project management support service',
+      'A home-based plant care consultancy',
+      'A local meal prep service for seniors',
+      'A remote Etsy store optimization service',
+      'A home-based custom sticker business',
+      'A local party decor rental and setup service',
+      'A remote social media growth coaching service',
+      'A home-based artisan bread baking business',
+      'A local home organization and decluttering service',
+      'A remote influencer outreach service',
+      'A home-based boutique soap shop',
+      'A local fitness and wellness program for small groups',
+      'A remote AI prompt creation service for entrepreneurs',
+      'A home-based craft kit subscription service',
+      'A local neighborhood handyman referral service',
+      'A remote copyediting and proofreading service',
+      'A home-based online kids club program',
+      'A local indoor plant rental and care service'
+    ];
+
+    const samplesContainer = document.getElementById('samples');
+    sampleIdeas.slice(0, 100).forEach((idea, index) => {
+      const plan = BusinessPlanTool.createPlan(idea);
+      const card = document.createElement('article');
+      card.className = 'sample-card';
+      card.innerHTML = `
+        <h3>Sample ${index + 1}</h3>
+        <p class="sample-idea">${idea}</p>
+        <div class="sample-grid">
+          <div><strong>Model:</strong> ${plan.model}</div>
+          <div><strong>Timeline:</strong> ${plan.firstMillionTimeline}</div>
+        </div>
+        <details>
+          <summary>View plan details</summary>
+          <div class="plan-section">
+            <h4>Budget</h4>
+            <ul>${Object.entries(plan.startupBudget).map(([key, value]) => `<li>${key}: ${value}</li>`).join('')}</ul>
+          </div>
+          <div class="plan-section">
+            <h4>Cashflow</h4>
+            <ul>${Object.entries(plan.cashflow).map(([key, value]) => `<li>${key}: ${value}</li>`).join('')}</ul>
+          </div>
+          <div class="plan-section">
+            <h4>Licenses</h4>
+            <ul>${plan.licenseRequirements.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>
+          <div class="plan-section">
+            <h4>Skills</h4>
+            <p>${plan.requiredSkills.join(', ')}</p>
+          </div>
+          <div class="plan-section">
+            <h4>Milestones</h4>
+            <ul>${plan.milestones.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>
+          <div class="plan-section">
+            <h4>Risks</h4>
+            <ul>${plan.risks.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>
+        </details>
+      `;
+      samplesContainer.appendChild(card);
+    });
+  </script>

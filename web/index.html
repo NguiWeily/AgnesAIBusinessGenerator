@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Business Plan Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Home Business Plan Generator</h1>
+      <p>Enter a business idea and get a detailed plan with budget, cashflow, compliance, skills, milestones, and first-million timeline.</p>
+      <a class="button" href="sample_plans.html">View 100 Sample Plans</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <h2>Enter your business idea</h2>
+      <form id="plan-form">
+        <label for="idea">Business idea</label>
+        <textarea id="idea" rows="4" placeholder="e.g. A home tutoring service for math and test prep"></textarea>
+        <button type="submit">Generate plan</button>
+      </form>
+    </section>
+
+    <section class="result-card hidden" id="result-card">
+      <h2>Generated Business Plan</h2>
+      <div id="result"></div>
+      <button id="copy-button">Copy to clipboard</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for fast home business planning.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
