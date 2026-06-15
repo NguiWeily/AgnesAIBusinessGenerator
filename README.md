@@ -1,44 +1,5 @@
 # AgnesAI Business Generator
-
-This repository is a fresh workspace scaffold created by GitHub Copilot.
-
-Next steps:
-- Add your project source code into the `src/` directory.
-- Choose a language/framework and add relevant config files (e.g., `requirements.txt`, `package.json`).
-- Commit and push to a remote repository if desired.
-
-Agnes AI chat examples
-----------------------
-
-Secure examples for creating a chat completion with the Agnes AI API. Do NOT hardcode your API key; set it in your environment as shown below.
-
-1) Environment
-
-Create a `.env` or set the environment variable `AGNES_API_KEY` to your API key.
-
-2) Curl (recommended)
-
-Use the `curl` command and read the API key from the environment:
-
-```bash
-curl https://apihub.agnes-ai.com/v1/chat/completions \
-	-H "Authorization: Bearer $AGNES_API_KEY" \
-	-H "Content-Type: application/json" \
-	-d '{
-		"model": "agnes-2.0-flash",
-		"messages": [
-			{"role": "user", "content": "Hello!"}
-		]
-	}'
-```
-
-3) Bash helper script
-
-See `scripts/chat.sh` for a small helper that reads `AGNES_API_KEY` and sends a message.
-
-4) Python example
-
-See `scripts/chat.py` for a minimal Python example using `requests`.
+<img width="506" height="900" alt="image" src="https://github.com/user-attachments/assets/c305a4e5-c36a-4736-90a4-b91eba82990d" />
 
 Home business plan generator
 ---------------------------
