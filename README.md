@@ -3,6 +3,21 @@
 
 Youtube Demo Video: https://youtu.be/A2toabHqqbs
 
+Purpose: 
+
+Provides (1) an Agnes AI chat helper and (2) a Home Business Plan generator available both as a Python CLI and a static web UI. Designed for fast iteration, local use, and easy publishing as a digital product.
+
+High-level architecture:
+
+Client-side static site (HTML/CSS/JS) for instant plan generation in-browser.
+Python CLI and library for server/automation usage and richer exports.
+Codes for interacting with Agnes AI API (bash + Python).
+Local-only secrets via .env and optional venv for Python dependencies.
+
+Components & responsibilities:
+
+business_plan.py — core plan-generator library (business logic, heuristics, data structures, JSON/pretty output).
+
 Home business plan generator
 ---------------------------
 
