@@ -1,4 +1,4 @@
-# AgnesAI Workspace
+# AgnesAI Business Generator
 
 This repository is a fresh workspace scaffold created by GitHub Copilot.
 
