@@ -1,6 +1,8 @@
 # AgnesAI Business Generator
 <img width="506" height="900" alt="image" src="https://github.com/user-attachments/assets/c305a4e5-c36a-4736-90a4-b91eba82990d" />
 
+Youtube Demo Video: https://youtu.be/A2toabHqqbs
+
 Home business plan generator
 ---------------------------
 
